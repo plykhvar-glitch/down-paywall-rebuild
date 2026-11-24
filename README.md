@@ -1,32 +1,24 @@
-# DOWN — the VIP paywall, personalized from the onboarding
+# Growth Audit — DOWN (VIP paywall)
 
-**Live page: https://plykhvar-glitch.github.io/down-paywall-rebuild/**
+**Live:** https://plykhvar-glitch.github.io/down-paywall-rebuild/
+**Paywall on a phone:** https://plykhvar-glitch.github.io/down-paywall-rebuild/?view=proto
 
-DOWN's VIP paywall, rebuilt in its own design and fed by what the onboarding already knows: the first
-name, GET DOWN or GET DATE, the highlight sticker, the city Nearby uses, and the button that opened VIP.
-Change them under the phone and the paywall rewrites itself. Flip **Today** to see the version shown on
-downapp.com. English and Spanish, plus a 30-second walkthrough.
+DOWN asks every new single GET DOWN or GET DATE, then their highlight. The VIP paywall opens on “See who liked you!” for everyone, whatever they answered and whichever button sent them there. This audit rebuilds that one screen so it says their answer back, in DOWN’s own design and at DOWN’s own App Store prices. Three phones show three taps on VIP: five likes in Visitors, the Flirt button, the end of today’s profiles. Each single’s answers can be changed under their phone.
 
-## The five changes
+| # | Idea | Potential outcome |
+| :-- | :-- | :-- |
+| 01 | Say GET DOWN or GET DATE back in the headline | CR +15–20% |
+| 02 | Lead with the feature they just tapped | CR +10–15% |
+| 03 | Put your proof under Continue | CR +10–15% |
+| 04 | Make the plan maths add up, per week | ARPU +8–15% |
+| 05 | Offer a smaller yes when they close | CR +3–6% from people who close |
 
-| # | Change | Today | Now | Expected impact |
-| :-- | :-- | :-- | :-- | :-- |
-| 1 | Their answer in the headline | "See who liked you!" for everyone | "Maya, see who's DOWN for you in Austin!" (or "…wants a DATE…"), with GET DOWN, the highlight sticker and the city under it | CR +15–20% |
-| 2 | The feature they tapped, first | Same four benefits in the same order, whatever opened VIP | Opened from Visitors, Flirt, the end of today's profiles or a new location: that line leads and the headline follows | CR +10–15% |
-| 3 | Proof under the button | Nothing on the screen says who else is here | "★ 4.3 · 130K ratings · Every member photo-verified" under Continue | CR +10–15% |
-| 4 | Prices that add up, per week | "12 MONTH, $7.99/mo" billed "$29.99/3mo"; 1 WEEK at $19.99 | 1 week $12.99 · 3 months $2.31/wk, Save 82%, picked · 1 month $4.61/wk | ARPU +8–15% |
-| 5 | A smaller yes on close | Closing ends it | "Be the Top Profile in Austin this week": 1 Week Profile Boost, $6.99 | CR +3–6% from people who close |
+Closing the paywall opens the 1 Week Profile Boost ($6.99) as a sheet. No discount on VIP, no timer.
 
-*Impact ranges are Adapty's expected effect from teardowns and A/B tests across subscription apps —
-not measured lift for DOWN.*
+**Grounding.** Prices ($12.99 Down VIP 1 Week, $19.99 1mo VIP, $29.99 3mo Upgraded Dating & Matches, $6.99 1 Week Profile Boost), 4.3 from 133K ratings, “19+ million open-minded singles” and “we verify all users from the start” from DOWN’s US App Store listing, 24 November 2026. “Today” is rebuilt from the VIP paywall shown on downapp.com. Picks, Visitors, the benefit lines and the highlight stickers from downapp.com and the App Store screenshots. Names, cities and chats in the prototype are samples. $2.31 a week is $29.99 ÷ 13; 82% is $2.31 against $12.99.
 
-Prices, the Profile Boost, the 4.3 rating from 130K ratings, photo verification and 19M users come from
-DOWN's US App Store listing; the paywall, benefits, highlight stickers and screens from downapp.com.
-Per-week prices and savings are computed from DOWN's own prices. "Today" is rebuilt from the paywall
-shown on downapp.com, so the live in-app screen may differ.
+Impact ranges are Adapty’s expected effect from teardowns and A/B tests across subscription apps, not measured lift for DOWN.
 
-## Run locally
+Run locally: `python3 -m http.server` in this folder, then open http://localhost:8000.
 
-```bash
-python3 -m http.server 8000
-```
+Prepared by Adapty · [Book a demo](https://calendly.com/d/cty4-37z-zqj)
